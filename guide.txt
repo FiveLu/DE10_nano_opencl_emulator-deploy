@@ -1,0 +1,44 @@
+
+Main Files:  
+	①vectoradd  
+	②vector_add.aocx(all compile version on windows  , emulator version on fpga)
+
+VS2019:	
+	Configuration Properties -> General -> Output Directory : $(SolutionDir)..\bin\
+
+	C/C++ -> Additional Include Directories : $(SolutionDir)..\..\common\inc;$(INTELFPGAOCLSDKROOT)\host\include;%(AdditionalIncludeDirectories)
+
+	Linker -> Additional Library Directories : $(INTELFPGAOCLSDKROOT)\host\windows64\lib;%(AdditionalLibraryDirectories)
+	
+	Linker -> Input -> Additional Dependencies: OpenCL.lib;%(AdditionalDependencies)
+
+	add source file : opencl.cpp & options.cpp
+CMD:
+	cd D:\intelfpga\18.1\hld\board\terasic\de10_nano\test\vectoradd_emulator
+
+Emulator：
+	step 1: aoc -march=emulator device\vector_add.cl -o bin\vector_add.aocx -board=de10_nano_sharedonly
+	step 2: set CL_CONTEXT_EMULATOR_DEVICE_INTELFPGA=1
+	step 3: bin\vectoradd.exe
+
+
+All Compile：
+	aoc device\vector_add.cl -o bin\vector_add.aocx -board=de10_nano_sharedonly -v -report
+	
+	so long time ....... waiting .............
+
+Makefile: 
+	Open ： SOC EDS COMMAND SHELL
+
+	step 1: cd intelfpga/18.1/hld/board/terasic/de10_nano/test/vectoradd_emulator/
+
+	step 2: make
+
+DE10_nano:
+	source ./init_opencl.sh 
+	chmod -r 777 <filename>
+	cd xxxx
+	./vectoradd  
+
+
+

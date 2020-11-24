@@ -1,0 +1,12 @@
+﻿  opencl.cpp
+  options.cpp
+  main.cpp
+D:\intelfpga\18.1\hld\board\terasic\de10_nano\test\vectoradd_emulator\host\src\main.cpp(167,9): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'cl_ulong'
+D:\intelfpga\18.1\hld\board\terasic\de10_nano\test\vectoradd_emulator\host\src\main.cpp(167,9): message : consider using '%llu' in the format string
+D:\intelfpga\18.1\hld\board\terasic\de10_nano\test\vectoradd_emulator\host\src\main.cpp(167,9): message : consider using '%Iu' in the format string
+D:\intelfpga\18.1\hld\board\terasic\de10_nano\test\vectoradd_emulator\host\src\main.cpp(167,9): message : consider using '%I64u' in the format string
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 209 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  vectoradd.vcxproj -> D:\intelfpga\18.1\hld\board\terasic\de10_nano\test\vectoradd_emulator\vectoradd\..\bin\vectoradd.exe

@@ -1,0 +1,4 @@
+{"rows":[
+{"name":"Auto-unrolled loop at d:\\intelfpga\\18.1\\hld\\board\\terasic\\de10_nano\\test\\vectoradd..."
+,"details":["Compiler Warning: Auto-unrolled loop at d:\\intelfpga\\18.1\\hld\\board\\terasic\\de10_nano\\test\\vectoradd_emulator/d:/intelfpga/18.1/hld/board/terasic/de10_nano/test/vectoradd_emulator/device/vector_add.cl:5"]}
+]}
